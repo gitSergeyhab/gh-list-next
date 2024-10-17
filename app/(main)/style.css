@@ -1,0 +1,27 @@
+.user-list {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(6, auto);
+  font-size: large;
+  font-weight: 700;
+  border-top: solid 2px var(--gray);
+}
+
+@media (max-width: 1024px) {
+  .user-list {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (max-width: 768px) {
+  .user-list {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+
+.user-item {
+  border-bottom: solid 2px var(--gray);
+}

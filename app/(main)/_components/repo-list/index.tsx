@@ -1,5 +1,3 @@
-"use client";
-
 import { FC } from "react";
 import { RepoItem } from "../repo-item";
 import { Repo } from "@/types";

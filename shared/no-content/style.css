@@ -1,0 +1,12 @@
+.no-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.no-content__title {
+    margin: 4rem 0;
+}
+

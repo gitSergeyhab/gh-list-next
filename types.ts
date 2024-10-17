@@ -13,3 +13,8 @@ export interface Repo {
 export type Language = "TypeScript" | "JavaScript" | "Python" | "HTML";
 
 export type Status = "idle" | "loading" | "success" | "error";
+
+export interface User {
+  login: string;
+  id: number;
+}

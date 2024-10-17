@@ -1,23 +1,15 @@
-"use client";
+import { User } from "./_components/user";
+import { fetchUsers } from "./fetchUsers";
+import "./style.css";
 
-import { useFetchRepos } from "@/hooks/use-fetch-repos";
-import { RepoList } from "./repo-list";
-
-export default function Home() {
-  const { repos, status } = useFetchRepos(40);
-
-  if (status === "loading") {
-    return <p className="app__loading">Loading...</p>;
-  }
-
-  if (status === "error" || !repos) {
-    return <p className="app__error">Error</p>;
-  }
-
-  return (
-    <section>
-      <h1 className="app__title">Repositories</h1>
-      <RepoList repos={repos} />
-    </section>
-  );
+export default async function Users () {
+    const users = await fetchUsers()
+    return (
+      <section>
+        <h1 className="app__title">Users</h1>
+        <ul className="user-list"> 
+            {users.map((user) => <li className="user-item" key={user.id}><User {...user} /></li> )} 
+        </ul>
+      </section>
+    );
 }

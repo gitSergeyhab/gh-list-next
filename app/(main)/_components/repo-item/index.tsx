@@ -14,7 +14,7 @@ export const RepoItem: FC<Repo> = ({
   updated_at,
   visibility,
   html_url,
-  id,
+  // id,
 }) => {
   return (
     <div className="repo-list__item repo-item">
@@ -37,7 +37,7 @@ export const RepoItem: FC<Repo> = ({
         )}
       </div>
       <div className="repo-item__block">
-        <StarButton onClick={() => console.log(`click ${id}`)} />
+        <StarButton />
         <div className="repo-item__date">
           Updated on {getStringDate(updated_at)}
         </div>

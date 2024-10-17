@@ -5,7 +5,7 @@ interface NavItem {
 
 export const navItems: NavItem[] = [
   {
-    name: "GithubList",
+    name: "GithubUsers",
     path: "/",
   },
   {
