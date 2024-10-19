@@ -18,3 +18,8 @@ export interface User {
   login: string;
   id: number;
 }
+
+export interface RepoSSG {
+  id: number;
+  full_name: string,
+}

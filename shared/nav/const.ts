@@ -12,4 +12,8 @@ export const navItems: NavItem[] = [
     name: "Forms",
     path: "/forms",
   },
+  {
+    name: "Repos (SSG Example)",
+    path: "/repos",
+  },
 ];

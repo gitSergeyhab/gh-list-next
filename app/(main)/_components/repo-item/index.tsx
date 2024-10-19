@@ -26,7 +26,7 @@ export const RepoItem: FC<Repo> = ({
           <span className="repo-item__visibility">{visibility}</span>
         </div>
         <p className="repo-item__description">{description}</p>
-        {!!topics.length && (
+        {!!topics?.length && (
           <ul className="repo-item__topic-list">
             {topics.map((topic, i) => (
               <li className="repo-item__topic-item" key={i}>
