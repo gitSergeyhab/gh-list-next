@@ -21,5 +21,7 @@ export interface User {
 
 export interface RepoSSG {
   id: number;
-  full_name: string,
+  full_name: string;
 }
+
+export type CountAction = "increment" | "decrement" | "reset";

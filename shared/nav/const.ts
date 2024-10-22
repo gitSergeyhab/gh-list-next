@@ -16,4 +16,8 @@ export const navItems: NavItem[] = [
     name: "Repos (SSG Example)",
     path: "/repos",
   },
+  {
+    name: "Cache",
+    path: "/cache",
+  },
 ];

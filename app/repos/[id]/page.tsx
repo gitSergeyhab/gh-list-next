@@ -1,5 +1,5 @@
-import { fetchRepoById } from "./fetchRepoById";
 import { fetchRepos } from "../fetchRepos";
+import { fetchRepoById } from "./fetchRepoById";
 import { JsonText } from "@/shared/json-text";
 
 export interface RepoParams {
@@ -10,7 +10,7 @@ export interface RepoParams {
 
 export async function generateStaticParams() {
   const repos = await fetchRepos();
-  return repos.map((repo) => ({ id: repo.id.toString() }));
+  return repos.slice(0, 10).map((repo) => ({ id: repo.id.toString() }));
 }
 
 export async function generateMetadata({ params: { id } }: RepoParams) {
