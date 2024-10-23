@@ -1,6 +1,8 @@
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   gap: 3rem;
   margin-bottom: 1rem;
@@ -11,6 +13,15 @@
   margin: auto;
   background-color: var(--main-bg-color);
   border-bottom: 2px solid var(--yellow);
+  min-height: 6rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 .nav__link {

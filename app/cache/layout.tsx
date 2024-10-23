@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SideBar } from "./_components/side-bar";
+import { CacheNav } from "./_components/cache-nav";
 import "./style.css";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="cache-layout">
-      <SideBar />
+      <CacheNav />
       {children}
     </div>
   );

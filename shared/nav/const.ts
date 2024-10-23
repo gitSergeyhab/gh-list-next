@@ -13,7 +13,7 @@ export const navItems: NavItem[] = [
     path: "/forms",
   },
   {
-    name: "Repos (SSG Example)",
+    name: "Repos(SSG)",
     path: "/repos",
   },
   {

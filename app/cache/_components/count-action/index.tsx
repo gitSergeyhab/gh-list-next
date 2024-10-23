@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { postCountAction } from "../../fetchCount";
 import { CountAction as ICountAction, Status } from "@/types";
-import "./style.css";
 
 export const CountAction = () => {
   const [action, setAction] = useState<ICountAction | null>(null);
